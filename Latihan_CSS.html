@@ -1,21 +1,207 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tittle>Latihan Sebelum Pertemuan 06</tittle>
-    <style> 
-        p {
-  color: red;
-  text-align: center;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Best Friend</title>
+  <style>
+    /* Font dan Warna Dasar */
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fff0f5;
+      color: #4b0082;
+      margin: 0;
+      padding: 0;
     }
-    #para1 {
-  text-align: center;
-  color: rgb(239, 151, 243);
-}
-    </style>
+
+    /* Header Gemas */
+    .header {
+      background-image: url(bckground.jpg);
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 60px;
+      color: white;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 48px);
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: normal;
+    }
+
+    /* Navigasi */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #ffb6c1;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    li a:hover {
+      background-color: #ffa0c2;
+    }
+
+    .active {
+      background-color: #ff69b4;
+    }
+
+    /* Section Sahabat */
+    .section {
+      padding: 20px;
+    }
+
+    .teman {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      width: 250px;
+      border: 2px solid #ffb6c1;
+      border-radius: 15px;
+      overflow: hidden;
+      background-color: white;
+      box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .nama {
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    /* Link Lihat Lebih Banyak */
+    .more {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .more a {
+      text-decoration: none;
+      color: white;
+      background-color: #ff69b4;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+
+    .more a:hover {
+      background-color: #ff1493;
+    }
+
+  </style>
 </head>
-<body> 
-    <p> CSS Sintaks </p>
-    <p id="para1">CSS Selector</p>
-</body>
+<body>
+  <div class="header">
+    <h1>Teman-temanku</h1>
+    <h3>Banyak momen seru bareng teman-temanku!</h3>
+  </div>
+  <ul>
+    <li><a class="active" href="#Sella&Khelly">Sella dan Khelly</a></li>
+    <li><a href="#Ken&Dustin">Ken dan Dustin</a></li>
+    <li><a href="#Elen&Vania">Elen dan Vania</a></li>
+    <li><a href="#Lainnya">Lainnya</a></li>
+  </ul>
+  <div class="section" id="sella&Khelly">
+    <h2>Sella dan Khelly</h2>
+    <p>Sella dan Khelly adalah sahabatku dari kelas 10. 
+      kami adalah teman sekelas dulunya, dan kami selalu menghabiskan waktu bersama-sama. 
+      Dari dulu kami dikenal sebagai tiga serangkai dan kami punya grup namanya Kampung Cine. 
+      Lucu memang kalau diingat-ingat, tapi kami punya banyak cerita. Walaupun kami sudah tidak sering ketemu, 
+      tapi kami terus menjaga komunikasi kami hehe
+    </p>
+    <div class="teman">
+      <div class="card">
+        <img src="Kelas 10.jpg" alt="Kelas 10">
+        <div class="nama">Foto abis ulangan</div>
+      </div>
+      <div class="card">
+        <img src="Kelas 11.jpg" alt="Kelas 11">
+        <div class="nama">Foto Lomba bareng</div>
+      </div>
+      <div class="card">
+        <img src="Kelas 12.jpg" alt="Kelas 12">
+        <div class="nama">Foto Promnight</div>
+    </div>
+  </div>
+
+  <div class="section" id="Ken&Dustin">
+    <h2>Ken dan Dustin</h2>
+    <p>Ken dan Dustin adalah Katingku di kampus. kami pertama kali kenal karena satu kepanitiaan yaitu Dies ke-3. 
+      Setelah kepanitiaan kami jadi sering pergi nongkrong bareng, jalan bareng, dan ke gereja bareng juga. Inilah teman tongkronganku.
+    </p>
+    <div class="teman">
+      <div class="card">
+        <img src="Natal Bersama.jpg" alt="Natal bersama">
+        <div class="nama">Foto abis acara</div>
+      </div>
+      <div class="card">
+        <img src="foto sama ken.jpg" alt="Foto sama Ken">
+        <div class="nama">Foto sama Ken </div>
+      </div>
+      <div class="card">
+        <img src="foto sama dustin.jpg" alt="Foto sama Dustin">
+        <div class="nama">Foto sama Dustin</div>
+    </div>
+
+    <div class="section" id="Elen&Vania">
+      <h2>Elen dan Vania</h2>
+      <p>Elen dan Vania adalah temanku ketika di sekolah. Kami mulai kenal sejak kelas 12 karena kami beda kelas. 
+        Mereka jurusan AKL dan aku BDP. Kami mulai dekat karena satu organisasi yaitu OSIS. AKhirnya kami jadi sering keluar bersama 
+        dan menjadi lebih dekat setelah OSIS. Setelah lulus kami makin dekat dan jadi sering keluar bareng deh..
+      </p>
+      <div class="teman">
+        <div class="card">
+          <img src="Foto elen.jpg" alt="Foto sama Elen">
+          <div class="nama">Foto sama Elen</div>
+        </div>
+        <div class="card">
+          <img src="foto bertiga osis.jpg" alt="Foto Bertiga">
+          <div class="nama">Foto Bertiga  </div>
+        </div>
+        <div class="card">
+          <img src="Foto Vania.jpg" alt="Foto sama Vania">
+          <div class="nama">Foto sama Vania</div>
+      </div>
+
+      <div class="section more">
+        <a href="#">Lihat Cerita Sahabat Lainnya</a>
+      </div>
+    
+    </body>
+    </html>
